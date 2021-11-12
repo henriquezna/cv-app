@@ -1,5 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
+import Personal from './components/Personal';
+import Experience from './components/Experience';
+import Education from './components/Education';
+import Preview from './components/Preview';
 
 function App() {
   return (
@@ -18,6 +22,14 @@ function App() {
           Learn React
         </a>
       </header>
+      <body>
+        <h1>Hello World!</h1>
+        <Personal />
+        <Experience />
+        <Education />
+        <button>Submit</button>
+        <Preview />
+      </body>
     </div>
   );
 }
