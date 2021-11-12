@@ -1,34 +1,30 @@
+import React, { useState, useEffect } from "react";
 import logo from './logo.svg';
 import './App.css';
-import Personal from './components/Personal';
-import Experience from './components/Experience';
-import Education from './components/Education';
+import CreateForms from './components/CreateForms';
 import Preview from './components/Preview';
 
 function App() {
+  const [data, setData] = useState("JIMBO");
+
+  const dataToParent = (name) => {
+    console.log(name, "SEND FUNCTION");
+    setData(name);
+  }
+
+  useEffect(() => { 
+       console.log(data, 'mainApp USEEFFECT');  
+  });
+
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
       <body>
         <h1>Hello World!</h1>
-        <Personal />
-        <Experience />
-        <Education />
-        <button>Submit</button>
-        <Preview />
+        <CreateForms datas={data} dataToParent={dataToParent} />
+        <Preview name={data}/>
       </body>
     </div>
   );

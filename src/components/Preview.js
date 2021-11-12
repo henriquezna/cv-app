@@ -6,10 +6,11 @@ import PreviewEducation from './PreviewEducation.js';
 
 
 function Preview(props) {
+    console.log(props, "PREVIEW");
     return (
         <div>
             <h1>Preview</h1>
-            <PreviewPersonal />
+            <PreviewPersonal personalInfo={props}/>
             <PreviewExperience />
             <PreviewEducation />
         </div>
