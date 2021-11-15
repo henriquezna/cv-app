@@ -10,9 +10,9 @@ function Preview(props) {
     return (
         <div>
             <h1>Preview</h1>
-            <PreviewPersonal personalInfo={props}/>
-            <PreviewExperience />
-            <PreviewEducation />
+            <PreviewPersonal personalData={props.personalData} />
+            <PreviewExperience experienceData={props.experienceData} />
+            <PreviewEducation educationData={props.educationData} />
         </div>
     );
 }
