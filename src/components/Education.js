@@ -14,7 +14,7 @@ function Education({ updateEducationData }) {
 
     return (
         <div>
-            <h1>Education Section</h1>
+            <h3>Education Section</h3>
             <form onSubmit={handleSubmit}>
                 <label for="school">School:</label><br />
                 <input type="text" id="school" name="school" value={school} onChange={(e) => setSchool(e.target.value)} /><br />
@@ -24,7 +24,6 @@ function Education({ updateEducationData }) {
                 <input type="date" id="dates" name="dates" value={date} onChange={(e) => setDate(e.target.value)} /><br />
                 <button type = 'submit'>Submit</button>
             </form>
-            <button>Edit</button>
         </div>
     );
 }

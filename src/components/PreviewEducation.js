@@ -5,10 +5,10 @@ function PreviewEducation(props) {
     
     return (
         <div>
-            <h1>Education Preview</h1>
-            <h2>{educationData.school}</h2>
-            <h2>{educationData.major}</h2>
-            <h2>{educationData.date}</h2>
+            <h3>Education Preview</h3>
+            <p>{educationData.school}</p>
+            <p>{educationData.major}</p>
+            <p>{educationData.date}</p>
         </div>
     );
 }

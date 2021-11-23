@@ -11,11 +11,11 @@ function PreviewPersonal(props) {
 
     return (
         <div>
-            <h1>Personal Preview</h1>
-            <h2>{personalData.name}</h2>
-            <h2>{personalData.last}</h2>
-            <h2>{personalData.email}</h2>
-            <h2>{personalData.phone}</h2>
+            <h3>Personal Preview</h3>
+            <p>{personalData.name}</p>
+            <p>{personalData.last}</p>
+            <p>{personalData.email}</p>
+            <p>{personalData.phone}</p>
         </div>
     );
 }

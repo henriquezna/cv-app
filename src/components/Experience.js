@@ -16,7 +16,7 @@ function Experience({ updateExperienceData }) {
 
     return (
         <div>
-            <h1>Experience</h1>
+            <h3>Experience</h3>
             <form onSubmit={handleSubmit}>
                 <label for="company">Company name:</label><br />
                 <input type="text" id="company" name="company" value={company} onChange={(e) => setCompany(e.target.value)} /><br />
@@ -30,7 +30,6 @@ function Experience({ updateExperienceData }) {
                 <input type="date" id="dateEnd" name="dateEnd" value={dateEnd} onChange={(e) => setdateEnd(e.target.value)} /><br /><br />
                 <button type = 'submit'>Submit</button>
             </form>
-            <button>Edit</button>
         </div>
     );
 }

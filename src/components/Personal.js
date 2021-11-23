@@ -19,7 +19,7 @@ function Personal({data, personalData, updatePersonalData}) {
 
     return (
         <div>
-            <h1>Personal</h1>
+            <h3>Personal</h3>
             <form onSubmit={handleSubmit}>
                 <label for="fname">First name:</label><br />
                 <input type="text" id="fname" name="fname" value={fName} onChange={(e) => setFName(e.target.value)} /><br />
@@ -31,7 +31,6 @@ function Personal({data, personalData, updatePersonalData}) {
                 <input type="tel" id="phone" name="phone" value={phone} onChange={(e) => setPhone(e.target.value)} /><br />
                 <button type = 'submit'>Submit</button>
             </form> 
-            <button>Edit</button>
         </div>
     );
 }

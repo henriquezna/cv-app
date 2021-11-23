@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import logo from './logo.svg';
 import './App.css';
 import CreateForms from './components/CreateForms';
 import Preview from './components/Preview';
@@ -8,9 +7,9 @@ function App() {
 
   const [personalData, setPersonalData] = useState(
     {
-      name: "JIMBO",
-      last: "Jones",
-      email: "abcd",
+      name: "John",
+      last: "Smith",
+      email: "john@smith.com",
       phone: "1234567890"
     });
 
@@ -18,14 +17,14 @@ function App() {
     {
       company: "ACME",
       position: "CEO",
-      tasks: "abcd",
+      tasks: "Running the Company",
       dateBeg: "12/20/2015",
       dateEnd: "08/15/2021"
     });
 
   const [educationData, setEducationData] = useState(
     {
-      school: "Michigan",
+      school: "University of Michigan",
       major: "Michigan Studies",
       date: "08/20/2015",
     });
@@ -77,7 +76,6 @@ function App() {
         <h1>CV Maker</h1>
       </header>
       <body>
-        <h1>Hello World!</h1>
         <CreateForms updatePersonalData={updatePersonalData} updateExperienceData={updateExperienceData} updateEducationData={updateEducationData} />
         <Preview personalData={personalData} experienceData={experienceData} educationData={educationData} />
       </body>

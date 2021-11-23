@@ -5,12 +5,12 @@ function PreviewExperience(props) {
 
     return (
         <div>
-            <h1>Experience Preview</h1>
-            <h2>{experienceData.company}</h2>
-            <h2>{experienceData.position}</h2>
-            <h2>{experienceData.tasks}</h2>
-            <h2>{experienceData.dateBeg}</h2>
-            <h2>{experienceData.dateEnd}</h2>
+            <h3>Experience Preview</h3>
+            <p>{experienceData.company}</p>
+            <p>{experienceData.position}</p>
+            <p>{experienceData.tasks}</p>
+            <p>{experienceData.dateBeg}</p>
+            <p>{experienceData.dateEnd}</p>
         </div>
     );
 }
